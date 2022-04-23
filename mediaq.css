@@ -1,0 +1,796 @@
+ @import url('http://fonts.cdnfonts.com/css/facon');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    background-color: #ffc400;
+    text-align: center;
+}
+
+section {
+    margin: 50px 0 75px;
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
+section h2 {
+    text-transform: uppercase;
+}
+
+section p {
+    padding: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* LOGO */
+   .name { 
+      font-family: 'Facon', sans-serif; 
+      font-size: 1.5rem;
+      background: -webkit-linear-gradient(#eeff00, #ff1e00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      padding-top: 20px;
+      letter-spacing: 1px;
+      -webkit-text-stroke: 1px black;
+  }
+  
+  .prof {
+      font-family: 'IM Fell English SC', serif;
+      text-transform: lowercase;
+      padding-bottom: 10px;
+      color: black;
+      font-size: 1rem;
+  }
+  
+  /* NAVIGATION */
+  .navbar {
+      position: fixed;
+      background-color: rgb(167, 0, 0);
+      width: 100%;
+      z-index: 1;
+      margin-bottom: 100px;
+  }
+  
+  nav ul {
+      display: flex;
+      list-style-type: none;
+  }
+
+  nav ul li {
+      width: 90%;
+      font-size: 12px;
+      padding: 5px 8px;
+      border: 1px solid black;
+      background-color: #eeff00
+  }
+  
+  .navbar a {
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  
+  .videos, .about, .home, .blog-container, .req-container {
+      position: fixed;
+      top: 75px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: scroll;
+  }
+
+  /* Home Page */
+  .home-header {
+      padding: 75px 0 0 0;
+      text-align: center;
+  }
+
+  .home-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #hidden { 
+      font-size: 0.8rem;
+  }
+
+  .home-section .item {
+      margin-bottom: 15px;
+  }
+
+  .home-section .item img {
+      width: 90%;
+  }
+
+  .home-section .item .action {
+      display: none;
+  }
+
+  .home-section .item:hover .action {
+      opacity: 1;
+      transition: 0.5s;
+  }
+
+  .home-section .item .action a {
+      display: inline-block;
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 10px 10px;
+  }
+
+  .drummond {
+      font-family: 'Facon', sans-serif;
+      font-size: 2.5rem;
+      color: rgb(167, 0, 0);
+      display: block;
+  }
+
+  .home-header h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+  }
+
+  .welcome {
+      text-align: center;
+  }
+
+  .welcome h1 {
+      font-size: 1.8rem;
+      margin: 25px;
+      height: 100%;
+      width: auto;
+      text-transform: uppercase;
+  }
+
+  .welcome p {
+      font-size: 1.7rem;
+  }
+
+  .welcome ul {
+      margin: 30px auto;
+      font-size: 1.7rem;
+  }
+
+  .welcome ul li {
+      font-size: 1rem;
+      padding: 5px;
+  }
+
+  .req-link a{
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      color: #ff1e00;
+      text-decoration: underline;
+  }
+
+  .req-link a:hover {
+      font-size: 1.4rem;
+      text-decoration: underline;
+  }
+
+
+  /* VIDEO SECTION */
+  .video-stanza, 
+  .about-stanza, 
+  .blog-header {
+      padding: 40px 0 50px;
+      text-align: center;
+  }
+
+  .video-stanza {
+      padding-bottom: 0;
+  }
+  
+  .video-stanza h1 {
+      display: none;
+  }
+  
+  .video-stanza p,
+  .about-stanza p {
+      font-size: 2rem;
+      padding: 11px;
+  }
+  
+  video {
+      width: 100%;
+      height: 400px;
+  }    
+  
+  .vid-box {
+      padding: 20px 10px;
+      text-align: center; 
+  }
+  
+  .band {
+      font-size: 35px;
+  }
+  
+  .song {
+      font-size: 25px;
+  }
+  
+  /* Request Section */
+  .req-form {
+      text-align: center;
+      margin-top: -75px;
+  }
+
+  .req-box {
+      text-align: center;
+      padding: 10px;
+      box-shadow: 2px 2px 5px #000;
+      border-radius: 5px;
+      background-color: rgb(230, 222, 222);
+      font-size: 24px;
+      font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .req-name {
+      padding: 0 15px 15px 15px;
+  }
+
+  .req-band {
+      padding: 15px;
+  }
+
+  .req-song {
+      padding: 15px;
+  }
+
+  .req-msg {
+      border: #000 2px solid;
+      margin: 15px;
+      padding: 15px;
+  }
+
+  .req-btn {
+      border: #000 2px solid;
+      margin: 5px 0 15px;
+      padding: 5px;
+      background: #ff1e00;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 24px;
+  }
+
+  /* About Section */
+  .drummond-about {
+      font-family: 'Facon', sans-serif;
+      font-size: 2rem;
+      color: rgb(167, 0, 0);
+  }
+
+  .about-stanza {
+      padding-top: 50px;
+      margin-bottom: -100px;
+  }
+
+  .about-stanza h1 {
+      font-size: 1.8rem;
+  }
+
+  .about-stanza p {
+      font-size: 1.3rem;
+  }
+  
+  .drpic{
+      height: 250px;
+      width: 250px;
+      border-radius: 15px;
+      border: 10px solid rgb(167, 0, 0);
+      margin: 15px;
+  }
+  
+  .drface {
+      margin-bottom: -30px;
+      box-shadow: 20px 15px 18px black;
+  }
+  
+  .dr-guitar {
+      margin: -65px 0 -30px;
+      box-shadow: -20px 15px 18px black;
+  }
+
+  .about2 {
+      margin-bottom: -80px;
+  }
+
+  .about3 {
+      margin-bottom: -500px;
+  }
+
+  /* Blog Section */ 
+  .blog-header {
+      text-align: center;
+      text-transform: uppercase;
+  }
+  
+  .blog-header h1 {
+      font-size: 2rem;
+  }
+  
+  .blog-header p{
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 1.3rem;
+  }
+  
+  .blog {
+      margin: 0 20px;
+  
+  }
+  
+  .blog h2 {
+      font-size: 26px;
+      text-decoration: double black underline;
+      padding-bottom: 8px;
+  }
+  
+  .blog p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .name {
+      font-size: 2.5rem;
+  }
+
+  .prof {
+      font-size: 1.5rem;
+  }
+
+  .home-header {
+      padding: 100px 0 0 0;
+  }
+
+  .video-stanza p {
+      margin-top: 20px;
+  }
+
+  video {
+      width: 100%;
+      height: 100%;
+  }
+
+  .vid-box {
+      padding: 20px 10px;
+      margin: 10px;
+      text-align: center;
+      border: black 1px solid;
+      background-color: rgb(167, 0, 0);
+  }
+
+  .song {
+      color: #ffc400;
+  }
+
+  section {
+      margin: 80px 0 75px;
+  }
+
+  .about-stanza {
+      padding-top: 100px;
+  }
+
+  .about-stanza h1, .drummond-about {
+      font-size: 3rem;
+  }
+
+  .blog-header {
+      padding: 100px 0 50px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+    /* LOGO */
+    .name {
+        display: inline-block;
+        font-family: 'Facon', sans-serif; 
+        font-size: 4rem;
+        background: -webkit-linear-gradient(#eeff00, #ff1e00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 20px;
+        letter-spacing: 1px;
+        -webkit-text-stroke: 2px black;
+    }
+
+    .prof {
+        font-family: 'IM Fell English SC', serif;
+        font-size: 40px;
+        text-transform: lowercase;
+        margin-bottom: 20px;
+        color: black;
+    } 
+
+    /* NAVIGATION */
+    .navbar {
+    position: fixed;
+    background-color: rgb(167, 0, 0);
+    width: 100%;
+    color: #fff;
+    height: 200px;
+    text-align: center;
+    z-index: 5;
+}
+
+.req-container {
+    position: fixed;
+}
+
+section {
+    margin: 250px 0 75px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #ffc400;
+}
+
+
+/* Home Page */
+.home-header {
+    margin-top: -40px;
+    padding: 75px 0 50px;
+    text-align: center;
+}
+
+.home-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#hidden {
+    visibility: hidden;
+}
+
+.home-section .item {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 20px;
+}
+
+.home-section .item img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.home-section .item .action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.home-section .item:hover .action {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.home-section .item .action a {
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 10px;
+}
+
+.drummond {
+    font-family: 'Facon', sans-serif;
+    font-size: 80px;
+    color: rgb(167, 0, 0);
+    display: block;
+}
+
+.home-header h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    margin: 25px;
+    height: 100%;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.welcome p {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.welcome ul {
+    margin: 30px auto;
+    font-size: 1.5rem;
+}
+
+.welcome ul li {
+    padding: 5px;
+}
+
+.req-link a{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #ff1e00;
+    text-decoration: none;
+}
+
+.req-link a:hover {
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+/* REQUEST PAGE */
+.req-form {
+    text-align: center;
+    margin-top: -75px;
+}
+
+.req-box {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #000;
+    border-radius: 5px;
+    background-color: rgb(230, 222, 222);
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.req-name {
+    padding: 0 15px 15px 15px;
+}
+
+.req-band {
+    padding: 15px;
+}
+
+.req-song {
+    padding: 15px;
+}
+
+.req-msg {
+    border: #000 2px solid;
+    margin: 15px;
+    padding: 15px;
+}
+
+.req-btn {
+    border: #000 2px solid;
+    margin: 20px;
+    padding: 20px;
+    background: #ff1e00;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.req-btn:hover {
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .35s ease-in-out;
+}
+
+.req-btn:active {
+    transform: scale(1.08);
+    transition: all 10ms;
+}
+
+
+/* VIDEOS */
+.video-stanza, .about-stanza, .blog-header {
+    padding: 75px 0 50px;
+    text-align: center;
+}
+
+.video-stanza h1, .about-stanza h1 {
+    font-size: 80px;
+    padding: 25px 0 45px;
+    text-transform: uppercase;
+}
+
+.video-stanza p, .about-stanza p {
+    font-size: 28px;
+}
+
+video {
+    width: 100%;
+    height: 400px;
+}    
+
+.videos, .about, .home {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.vid-box {
+    padding: 10px 10px;
+    text-align: center; 
+}
+
+.band {
+    font-size: 35px;
+}
+
+.song {
+    font-size: 25px;
+}
+
+.v1 {
+    float: left;
+    margin: 50px;
+}
+
+.v2{
+    float: right;
+    margin: 50px;
+}
+
+.narrow-l {
+    margin-left: 200px;
+}
+
+.narrow-r {
+    margin-right: 200px;
+}
+
+
+
+
+/* About */
+.drummond-about {
+    font-family: 'Facon', sans-serif;
+    font-size: 80px;
+    color: rgb(167, 0, 0);
+}
+
+.about-stanza {
+    padding-top: 75px;
+}
+
+.about1 {
+    overflow: inherit;
+    margin-top: -300px;
+}
+
+.about2 {
+    overflow: inherit;
+    margin-top: -250px;
+}
+
+.about3 {
+    overflow: auto;
+    margin: -250px 0 -200px 0;
+}
+
+.drpic{
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    border: 10px solid rgb(167, 0, 0);
+}
+
+.drface {
+    float: right;
+    margin: 0 30px 30px 0;
+    transform: skew(-6deg, 6deg);
+    box-shadow: 20px 15px 18px black;
+}
+
+.dr-guitar {
+    float: left;
+    margin: 0 15px 20px 40px;
+    transform: skew(7deg, -7deg);
+    box-shadow: -20px 15px 18px black;
+}
+
+/* Blog */
+.blog-container {
+    position: fixed;
+    top: 220px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.blog-header {
+    margin: 45px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blog-header h1 {
+    font-size: 60px;
+}
+
+.blog-header p{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 28px;
+}
+
+.blog {
+    margin: 0 20px;
+
+}
+
+.blog h2 {
+    font-size: 35px;
+    text-decoration: double black underline;
+    padding-bottom: 8px;
+}
+
+.blog p {
+    font-size: 24px;
+    margin-bottom: 30spx;
+}
+}
+
+@media only screen and (min-width: 920px) {
+    .req-container {
+        position: fixed;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .vid-container {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
