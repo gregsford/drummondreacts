@@ -1,5 +1,5 @@
 # drummondreacts
-I decided to create a website for my YouTube channel where I film myself reacting to songs for the first time.  
+I created a website for my YouTube channel where I film myself reacting to songs for the first time.  
 
 With the About and Blog pages, I made them so followers can get to know more about who I am and why music is important to me.
 
